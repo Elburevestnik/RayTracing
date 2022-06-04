@@ -1,0 +1,119 @@
+
+.grid-wrapper {
+    height: auto;
+    width: calc(100% - 48px);
+    margin-top: 8px;
+    padding: 64px 24px 24px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 32px;
+    row-gap: 64px;
+
+    border-radius: 8px;
+    background-color: #B6ABFC;
+}
+
+.grid-card {
+    height: max-content;
+    min-height: 230px;
+    padding: 16px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 24px;
+    background-color: #D9D2FF;
+}
+
+.grid-card__actions {
+    padding: 8px 16px;
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 16px;
+    background-color: #C3BAF9;
+}
+
+.grid-card__actions_type-section {
+    bottom: calc(100% + 8px);
+    align-self: center;
+}
+
+.grid-card__actions_type-element {
+    margin-top: 2px;
+    padding: 2px 0;
+
+    position: static;
+    align-self: flex-end;
+
+    background: none;
+}
+
+.grid-card__actions .action, .grid-card__actions .action img {
+    height: 32px;
+    width: 32px;
+}
+
+.grid-card__actions_type-element .action, .grid-card__actions_type-element .action img {
+    height: 24px;
+    width: 24px;
+}
+
+.grid-card__element {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-card__element-tile {
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    text-align: left;
+
+    border-radius: 16px;
+    background-color: #FFD2F8;
+}
+
+.grid-card__element-tile > img {
+    height: 32px;
+    width: 32px;
+}
+
+.grid-card__tile:hover, .grid-card__element-tile:focus {
+    box-shadow:  2px -2px 0px #b6abfc, 
+                 -2px 2px 0px #B6ABFA, 
+                 -2px -2px 0px #b6abfc, 
+                 2px 2px 0px #b6abfc;
+}
+
+.grid-card__element-tile_status-default {
+    background-color: #FFD2F8;
+}
+.grid-card__element-tile_status-low {
+    background-color: #C5BBFF;
+}
+.grid-card__element-tile_status-mid {
+    background-color: #B3D8FB;
+}
+.grid-card__element-tile_status-high {
+    background-color: #85DEE3;
+}
+
+
+.grid-card__element:not(:first-child) {
+    margin-top: 8px;
+}
+
+.grid-card__element-wrapper {
+    margin-top: 24px;
+}

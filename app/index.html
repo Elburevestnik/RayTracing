@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My grades</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h2>Hello world</h2>
-        <h2>Hello world</h2>
-    </body>
+
+<head>
+    <title>My grades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="theme-toggle-wrapper">
+            <span class="theme-name">strict</span>
+            <button class="theme-toggle"><span class="theme-toggle__circle theme-toggle__circle_theme-crazy"></span></button>
+            <span class="theme-name">crazy</span>
+        </div>
+        <h1 class="title">My Grades</h1>
+    </header>
+    <main>
+        <button type="button" role="button" class="action action_type-add-group">
+            <img src="./assets/svg/add.svg" alt="Add group button">
+        </button>
+        <div class="grid-wrapper">
+            <section class="grid-card">
+                <div class="grid-card__actions grid-card__actions_type-section">
+                    <button type="button" role="button" class="action">
+                        <img src="./assets/svg/add_circle.svg" alt="Add topic button">
+                    </button>
+                    <button type="button" role="button" class="action">
+                        <img src="./assets/svg/delete.svg" alt="Remove topic button">
+                    </button>
+                    <button type="button" role="button" class="action">
+                        <img src="./assets/svg/edit.svg" alt="Edit topic button">
+                    </button>
+                </div>
+                <h2 id="section-name">html</h2>
+                <div class="grid-card__element-wrapper">
+                    <div class="grid-card__element">
+                        <button id="element-tile" type="button" role="button"
+                            Class="grid-card__element-tile grid-card__element-tile_status-default">
+                            <img src="./assets/svg/star_empty.svg" alt="Null progress icon"/>
+                            <span>tags</span>
+                        </button>
+                        <div class="grid-card__actions grid-card__actions_type-element">
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/add_circle.svg" alt="Add sourse button">
+                            </button>
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/delete.svg" alt="Remove source button">
+                            </button>
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/edit.svg" alt="Edit source button">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid-card__element">
+                        <button id="element-tile" type="button" role="button"
+                            Class="grid-card__element-tile grid-card__element-tile_status-low">
+                            <img src="./assets/svg/star_half.svg" alt="A litle bit progress icon"/>
+                            <span>tags</span>
+                        </button>
+                        <div class="grid-card__actions grid-card__actions_type-element">
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/add_circle.svg" alt="Add sourse button">
+                            </button>
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/delete.svg" alt="Remove source button">
+                            </button>
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/edit.svg" alt="Edit source button">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid-card__element">
+                        <button id="element-tile" type="button" role="button"
+                            Class="grid-card__element-tile grid-card__element-tile_status-mid">
+                            <img src="./assets/svg/star_half.svg" alt="A little bit progress icon"/>
+                            <span>tags</span>
+                        </button>
+                        <div class="grid-card__actions grid-card__actions_type-element">
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/add_circle.svg" alt="Add sourse button">
+                            </button>
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/delete.svg" alt="Remove source button">
+                            </button>
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/edit.svg" alt="Edit source button">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid-card__element">
+                        <button id="element-tile" type="button" role="button"
+                            Class="grid-card__element-tile grid-card__element-tile_status-high">
+                            <img src="./assets/svg/star_fill.svg" alt="100% progress icon"/>
+                            <span>tags</span>
+                        </button>
+                        <div class="grid-card__actions grid-card__actions_type-element">
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/add_circle.svg" alt="Add sourse button">
+                            </button>
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/delete.svg" alt="Remove source button">
+                            </button>
+                            <button type="button" role="button" class="action">
+                                <img src="./assets/svg/edit.svg" alt="Edit source button">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="author-name">ElBurevestnik</p>
+        <img src="./assets/png/GitHub-Mark-Light-64px.png" alt="gitHub link">
+    </footer>
+</body>
+
 </html>

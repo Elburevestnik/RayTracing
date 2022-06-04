@@ -1,0 +1,22 @@
+.action {
+    height: 48px;
+    width: 48px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+.action:hover, .action:focus {
+    box-shadow: 2px -2px 0px #b6abfc, 
+                -2px 2px 0px #B6ABFA, 
+                -2px -2px 0px #b6abfc, 
+                2px 2px 0px #b6abfc;
+}
+
+.action_type-add-group {
+    background-color: rgba(133, 222, 227, 0.6);
+}
