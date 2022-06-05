@@ -49,10 +49,10 @@
     transition: transform 0.3s linear;
 }
 
-.theme-toggle__circle_theme-crazy {
+.theme-toggle_theme-crazy .theme-toggle__circle {
     transform: translateX(150%);
 }
 
-.theme-toggle__circle_theme-strict {
+.theme-toggle_theme-strict .theme-toggle__circle {
     transform: translateX(0);
 }
