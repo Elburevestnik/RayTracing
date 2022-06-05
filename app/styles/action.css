@@ -11,12 +11,16 @@
 }
 
 .action:hover, .action:focus {
-    box-shadow: 2px -2px 0px #b6abfc, 
-                -2px 2px 0px #B6ABFA, 
-                -2px -2px 0px #b6abfc, 
-                2px 2px 0px #b6abfc;
+    box-shadow: 2px -2px 0px var(--focus-color), 
+                -2px 2px 0px var(--focus-color), 
+                -2px -2px 0px var(--focus-color), 
+                2px 2px 0px var(--focus-color);
 }
 
 .action_type-add-group {
-    background-color: rgba(133, 222, 227, 0.6);
+    background-color: var(--add-group-button-color);
+}
+
+.action > img {
+    filter: var(--action-btn-color);
 }

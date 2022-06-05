@@ -11,7 +11,7 @@
     row-gap: 64px;
 
     border-radius: 8px;
-    background-color: #B6ABFC;
+    background-color: var(--grid-background-color);
 }
 
 .grid-card {
@@ -25,7 +25,7 @@
     flex-direction: column;
 
     border-radius: 24px;
-    background-color: #D9D2FF;
+    background-color: var(--grid-card-color);
 }
 
 .grid-card__actions {
@@ -38,7 +38,7 @@
     gap: 8px;
 
     border-radius: 16px;
-    background-color: #C3BAF9;
+    background-color: var(--actions-color);
 }
 
 .grid-card__actions_type-section {
@@ -81,7 +81,7 @@
     text-align: left;
 
     border-radius: 16px;
-    background-color: #FFD2F8;
+    background-color: var(--tile-status-default-color);
 }
 
 .grid-card__element-tile > img {
@@ -90,25 +90,43 @@
 }
 
 .grid-card__tile:hover, .grid-card__element-tile:focus {
-    box-shadow:  2px -2px 0px #b6abfc, 
-                 -2px 2px 0px #B6ABFA, 
-                 -2px -2px 0px #b6abfc, 
-                 2px 2px 0px #b6abfc;
+    box-shadow:  2px -2px 0px var(--focus-color), 
+                 -2px 2px 0px var(--focus-color), 
+                 -2px -2px 0px var(--focus-color), 
+                 2px 2px 0px var(--focus-color);
 }
 
 .grid-card__element-tile_status-default {
-    background-color: #FFD2F8;
-}
-.grid-card__element-tile_status-low {
-    background-color: #C5BBFF;
-}
-.grid-card__element-tile_status-mid {
-    background-color: #B3D8FB;
-}
-.grid-card__element-tile_status-high {
-    background-color: #85DEE3;
+    background-color: var(--tile-status-default-color);
 }
 
+.grid-card__element-tile_status-default > span {
+    color: var(--tile-status-default-font-color);
+}
+
+.grid-card__element-tile_status-low {
+    background-color: var(--tile-status-low-color);
+}
+
+.grid-card__element-tile_status-low > span {
+    color: var(--tile-status-low-font-color);
+}
+
+.grid-card__element-tile_status-mid {
+    background-color: var(--tile-status-mid-color);
+}
+
+.grid-card__element-tile_status-mid > span {
+    color: var(--tile-status-mid-font-color);
+}
+
+.grid-card__element-tile_status-high {
+    background-color: var(--tile-status-high-color);
+}
+
+.grid-card__element-tile_status-high > span {
+    color: var(--tile-status-high-font-color);
+}
 
 .grid-card__element:not(:first-child) {
     margin-top: 8px;
@@ -116,4 +134,8 @@
 
 .grid-card__element-wrapper {
     margin-top: 24px;
+}
+
+#section-name {
+    color: var(--card-font-color);
 }

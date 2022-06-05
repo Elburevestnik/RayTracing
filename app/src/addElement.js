@@ -1,4 +1,19 @@
-<script>
+<script type="text/javascript">
+    const themeImgList = {
+        crazy: {
+            high: '../assets/svg/star_fill.svg',
+            mid: '../assets/svg/star_half.svg',
+            low: '../assets/svg/star_half.svg',
+            zero: '../assets/svg/star_empty.svg',
+        },
+        strict: {
+            high: '../assets/svg/humidity_high.svg',
+            mid: '../assets/svg/humidity_mid.svg',
+            low: '../assets/svg/humidity_little-bit.svg',
+            zero: '../assets/svg/humidity_low.svg',
+        },
+    };
+
     const sectionTemplate = '<section class="grid-card">' +
         '<div class="grid-card__actions grid-card__actions_type-section">' +
             '<button type="button" role="button" class="action">' +

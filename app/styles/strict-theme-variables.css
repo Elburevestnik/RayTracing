@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Manjari;
+    src: url(../assets/font/Manjari/Manjari-Regular.ttf);
+}
+
+:root {
+    --font-family: Manjari;
+    --font-color: #ffffff;
+    --title-font-color: #ffffff;
+    --toggle-font-color: #338F7F;
+    --card-font-color: #338F7F;
+    --tile-status-default-font-color: #338F7F;
+    --tile-status-low-font-color: #338F7F;
+    --tile-status-mid-font-color: #ffffff;
+    --tile-status-high-font-color: #ffffff;
+    --footer-font-color: #ffffff;
+    --toggle-border-color: #338F7F;
+    --toggle-circle-color: #338F7F;
+    --background-color: #ffffff;
+    --title-color: #338F7F;
+    --footer-color: #338F7F;
+    --focus-color: #2A7467;
+    --add-group-button-color: #FFF5D2;
+    --grid-background-color: #F5F5F5;
+    --grid-card-color: #FFF5D2;
+    --actions-color: #CFE5E2;
+    --tile-status-default-color: #F5F5F5;
+    --tile-status-low-color: #CFE5E2;
+    --tile-status-mid-color: #58B0A1;
+    --tile-status-high-color: #338F7F;
+    --action-btn-color: invert(51%) sepia(15%) saturate(1393%) hue-rotate(120deg) brightness(90%) contrast(91%);
+}

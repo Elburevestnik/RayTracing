@@ -4,7 +4,7 @@
 
     text-align: center;
 
-    background-color: #B6ABFC;
+    background-color: var(--title-color);
 }
 
 .theme-toggle-wrapper {
@@ -17,6 +17,10 @@
     gap: 8px;
 }
 
+.theme-toggle-wrapper > * {
+    color: var(--toggle-font-color);
+}
+
 .theme-toggle {
     height: 24px;
     width: 44px;
@@ -25,7 +29,14 @@
     align-items: center;
 
     border-radius: 16px;
-    border: #fff 2px solid;
+    border: var(--toggle-border-color) 2px solid;
+}
+
+.theme-toggle:hover, .theme-toggle:focus {
+    box-shadow: 2px -2px 0px var(--focus-color), 
+    -2px 2px 0px var(--focus-color), 
+    -2px -2px 0px var(--focus-color), 
+    2px 2px 0px var(--focus-color);
 }
 
 .theme-toggle__circle {
@@ -34,7 +45,7 @@
     width: 16px;
 
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--toggle-circle-color);
     transition: transform 0.3s linear;
 }
 

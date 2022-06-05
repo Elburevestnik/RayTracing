@@ -1,0 +1,32 @@
+@font-face {
+    font-family: IrishGrover;
+    src: url(../assets/font/Irish_Grover/IrishGrover-Regular.ttf);
+}
+
+:root {
+    --font-family: IrishGrover;
+    --font-color: #ffffff;
+    --title-font-color: #ffffff;
+    --toggle-font-color: #ffffff;
+    --card-font-color: #ffffff;
+    --tile-status-default-font-color: #ffffff;
+    --tile-status-low-font-color: #ffffff;
+    --tile-status-mid-font-color: #ffffff;
+    --tile-status-high-font-color: #ffffff;
+    --footer-font-color: #ffffff;
+    --toggle-border-color: #ffffff;
+    --toggle-circle-color: #ffffff;
+    --background-color: #D6CFFC;
+    --title-color: #B6ABFC;
+    --footer-color: #85DEE3;
+    --focus-color: #B6ABFA;
+    --add-group-button-color: rgba(133, 222, 227, 0.6);
+    --grid-background-color: #B6ABFC;
+    --grid-card-color: #D9D2FF;
+    --actions-color: #C3BAF9;
+    --tile-status-default-color: #FFD2F8;
+    --tile-status-low-color: #C5BBFF;
+    --tile-status-mid-color: #B3D8FB;
+    --tile-status-high-color: #85DEE3;
+    --action-btn-color: none;
+}

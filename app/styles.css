@@ -2,16 +2,14 @@
 @import url(./styles/action.css);
 @import url(./styles/main-grid.css);
 
-@font-face {
-    font-family: IrishGrover;
-    src: url(assets/font/Irish_Grover/IrishGrover-Regular.ttf);
-}
+
 
 body, h1, h2, p, footer, span {
     margin: 0;
 
-    font-family: IrishGrover;
-    color: #FFF;
+    font-family: var(--font-family);
+    font-weight: normal;
+    color: var(--font-color);
 }
 
 button {
@@ -41,7 +39,7 @@ p, span {
 body {
     height: 100vh;
 
-    background-color: #D6CFFC;
+    background-color: var(--background-color);
 }
 
 
@@ -73,7 +71,7 @@ footer {
     align-items: center;
     justify-content: flex-end;
     
-    background-color: #85DEE3;
+    background-color: var(--footer-color);
 }
 
 .author-name {
