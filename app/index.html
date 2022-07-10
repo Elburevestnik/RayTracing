@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./styles/crazy-theme-variables.css" id="theme-link">
     <script src="./src/toggleAction.js" defer></script>
+    <script src="./src/observable.js" defer></script>
+    <script src="./src/addElement.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +21,7 @@
         <h1 class="title">My Grades</h1>
     </header>
     <main>
-        <button type="button" role="button" class="action action_type-add-group">
+        <button type="button" role="button" id="addGroup" class="action action_type-add-group">
             <img src="./assets/svg/add.svg" alt="Add group button">
         </button>
         <div class="grid-wrapper">
