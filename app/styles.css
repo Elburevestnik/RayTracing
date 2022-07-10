@@ -1,10 +1,11 @@
 @import url(./styles/header.css);
 @import url(./styles/action.css);
 @import url(./styles/main-grid.css);
+@import url(./styles/edit-modal.css);
 
 
 
-body, h1, h2, p, footer, span {
+body, h1, h2, p, footer, span, label {
     margin: 0;
 
     font-family: var(--font-family);
@@ -79,4 +80,27 @@ footer {
 
     font-size: 32px;
     line-height: 40px;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay_state-hidden {
+    display: none;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
 }

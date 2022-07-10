@@ -1,0 +1,38 @@
+.edit-modal {
+    width: 384px;
+    height: 80px;
+    border-radius: 16px;
+    padding: 36px 32px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    gap: 32px;
+
+    background-color: var(--edit-modal-background);
+}
+.edit-modal__input-field {
+    width: 264px;
+}
+
+.edit-modal__input-field > * {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.edit-modal__label {
+    color: var(--input-label-font-color);
+    text-transform: uppercase;
+}
+
+.edit-modal__input {
+    width: 264px;
+    height: 48px;;
+    display: inline-block;
+
+    color: var(--input-font-color);
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+}

@@ -62,7 +62,7 @@ function addGroup(groupContainer, sectionTemplate) {
     section.id = '#gridCardNo' + countOfCards;
     section.className = 'grid-card';
     section.innerHTML = sectionTemplate;
-    openModalToEditGroupName(section);
+    openModalToEditName(section);
     groupContainer.appendChild(section);
     const wrapper = groupContainer.querySelector('#elementWrapper');
     const removeListener$ = new Subject();
@@ -103,7 +103,7 @@ function addElement(groupContainer, elementTemplate, parentRemoveListener$) {
     section.id = '#gridCardElementNo' + countOfCards;
     section.className = 'grid-card__element';
     section.innerHTML = elementTemplate;
-    openModalToEditGroupName(section);
+    openModalToEditName(section);
     groupContainer.appendChild(section);
     const removeListener$ = new Subject();
     const removeBtn = groupContainer.querySelector('#removeElement');
@@ -118,11 +118,11 @@ function addElement(groupContainer, elementTemplate, parentRemoveListener$) {
     };
 
     const _editElement = () => {
-        openModalToEditGroupName(section);
+        openModalToEditName(section);
     };
 
     const _openModal = () => {
-        openModalWithThemes();
+        openModalWithTopics();
     };
 
     const addBtn = groupContainer.querySelector('#addTheme');
@@ -137,9 +137,11 @@ function addElement(groupContainer, elementTemplate, parentRemoveListener$) {
         editBtn.removeEventListener('click', _editElement, false);
         tileBtn.removeEventListener('click', _openModal, false);
     }
+
     removeListener$.subscribe((event) => {
         _removeListeners();
     });
+    
     parentRemoveListener$.subscribe((event) => {
         _removeGroup();
     });
@@ -203,13 +205,13 @@ function addElement(groupContainer, elementTemplate, parentRemoveListener$) {
 //     }
 // }
 
-function openModalToEditGroupName(groupNode) {
+function openModalToEditName(groupNode) {
         //todo modal for input name
     console.log(groupNode);
 }
 
-function openModalWithThemes() {
-    console.log(theme); 
+function openModalWithTopics() {
+    alert('This functional is not ready yet');
 }
 
 

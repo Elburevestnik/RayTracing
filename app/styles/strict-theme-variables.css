@@ -29,4 +29,9 @@
     --tile-status-mid-color: #58B0A1;
     --tile-status-high-color: #338F7F;
     --action-btn-color: invert(51%) sepia(15%) saturate(1393%) hue-rotate(120deg) brightness(90%) contrast(91%);
+    --edit-modal-background: #FFF;
+    --input-background: #FFF;
+    --input-border-color: #338F7F;
+    --input-label-font-color: #338F7F;
+    --input-font-color: #338F7F;
 }

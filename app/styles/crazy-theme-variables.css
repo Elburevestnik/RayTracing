@@ -29,4 +29,9 @@
     --tile-status-mid-color: #B3D8FB;
     --tile-status-high-color: #85DEE3;
     --action-btn-color: none;
+    --edit-modal-background: #B3D8FB;
+    --input-background: #FFF;
+    --input-border-color: #85DEE3;
+    --input-label-font-color: #FFF;
+    --input-font-color: #B6ABFA;
 }

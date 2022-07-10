@@ -55,7 +55,8 @@ class Subject {
             this.closed = true;
             this.subscriptions.forEach((observer) => {
                 observer.complete?.();
-            })
+            });
+            this.subscriptions = [];
         }
     }
 
@@ -64,7 +65,8 @@ class Subject {
             this.closed = true;
             this.subscriptions.forEach((observer) => {
                 observer.error?.(err);
-            })
+            });
+            this.subscriptions = [];
         }
     }
 
