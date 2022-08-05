@@ -54,7 +54,7 @@ export class Section {
         };
 
         const _editElement = () => {
-            this.#openModalToEditName();
+            this.#openModalToEditName(true);
         };
 
         const _openModal = () => {
