@@ -1,4 +1,4 @@
-class Subscriber {
+export class Subscriber {
     closed = false;
 
     constructor(destination) {}
@@ -25,7 +25,7 @@ class Subscriber {
     }
 }
 
-class Observable {
+export class Observable {
     constructor(_wrapFunction) {
 
     }
@@ -36,7 +36,7 @@ class Observable {
     }
 }
 
-class Subject {
+export class Subject {
     closed = false;
     subscriptions = [];
 
@@ -70,7 +70,21 @@ class Subject {
         }
     }
 
-    subscribe (next, complete, error) {
+    subscribe (next, complete = () => {}, error = () => {}) {
         this.subscriptions.push({next, complete, error});
+    }
+}
+
+export class BehaviorSubject extends Subject {
+    value = null;
+
+    constructor(value) {
+        super();
+        this.value = value;
+    }
+
+    next(value) {
+        super.next(value)
+        this.value = value;
     }
 }

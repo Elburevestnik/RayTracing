@@ -6,9 +6,16 @@
     <link rel="stylesheet" href="./styles/strict-theme-variables.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./styles/crazy-theme-variables.css" id="theme-link">
-    <script src="./src/toggleAction.js" defer></script>
-    <script src="./src/observable.js" defer></script>
-    <script src="./src/addElement.js" defer></script>
+    <script type="module" defer>
+        import {listenThemeSelection} from './src/listenThemeSelection.js';
+        import {Subscriber, Observable, Subject, BehaviorSubject} from './src/Observable.js';
+        import {EditDialog} from './src/EditDialog.js';
+        import {Section} from './src/Section.js';
+        import {Group} from './src/Group.js';
+        import {initListeners} from './src/initListeners.js';
+        listenThemeSelection();
+        initListeners();
+    </script>
 </head>
 
 <body>
@@ -37,7 +44,7 @@
                         <img src="./assets/svg/edit.svg" alt="Edit topic button">
                     </button>
                 </div>
-                <h2 id="section-name">html</h2>
+                <h2 class="grid-card__name" id="section-name">html</h2>
                 <div class="grid-card__element-wrapper">
                     <div class="grid-card__element">
                         <button id="element-tile" type="button" role="button"
@@ -114,21 +121,10 @@
                 </div>
             </section>
         </div>
-        <div class="overlay overlay_state-hidden">
-            <div class="edit-modal">
-                <div class="edit-modal__input-field">
-                    <label class="edit-modal__label" for="editInput">
-                        edit name
-                    </label>
-                    <input id="editInput" class="edit-modal__input" type="text">
-                </div>
-                <button type="button" role="button" class="action">
-                        <img src="./assets/svg/accept-icon.svg" alt="Accept button">
-                </button>
-                <button type="button" role="button" class="action modal-close-btn">
-                    <img src="./assets/svg/close.svg" alt="Close button">
-                </button>
-            </div>
+        <div class="overlay-wrapper hidden" id="overlayWrapper">
+        <div class="overlay">
+        </div>
+            
             <div class="topic-list-modal">
                 <button type="button" role="button" class="action modal-close-btn">
                     <img src="./assets/svg/close.svg" alt="Close button">

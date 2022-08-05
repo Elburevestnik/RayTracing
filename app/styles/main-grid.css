@@ -136,6 +136,6 @@
     margin-top: 24px;
 }
 
-#section-name {
+.grid-card__name {
     color: var(--card-font-color);
 }

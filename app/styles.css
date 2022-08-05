@@ -3,7 +3,9 @@
 @import url(./styles/main-grid.css);
 @import url(./styles/edit-modal.css);
 
-
+* {
+    transition: 300ms ease-in-out;
+}
 
 body, h1, h2, p, footer, span, label {
     margin: 0;
@@ -82,25 +84,29 @@ footer {
     line-height: 40px;
 }
 
-.overlay {
+.overlay-wrapper {
     height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
 
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.overlay_state-hidden {
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.hidden {
     display: none;
 }
 
-.modal-close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
+.visible {
+    display: block;
 }
