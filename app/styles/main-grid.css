@@ -6,9 +6,9 @@
     padding: 64px 24px 24px;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     column-gap: 32px;
-    row-gap: 64px;
+    row-gap: 72px;
 
     border-radius: 8px;
     background-color: var(--grid-background-color);
@@ -26,6 +26,7 @@
 
     border-radius: 24px;
     background-color: var(--grid-card-color);
+    box-shadow: 0px 0px 8px 0 var(--boxshadow-color);
 }
 
 .grid-card__actions {
@@ -44,6 +45,7 @@
 .grid-card__actions_type-section {
     bottom: calc(100% + 8px);
     align-self: center;
+    box-shadow: 0px 0px 2px 1px var(--boxshadow-color);
 }
 
 .grid-card__actions_type-element {
@@ -82,6 +84,7 @@
 
     border-radius: 16px;
     background-color: var(--tile-status-default-color);
+    box-shadow: 0px 0px 2px 0 var(--boxshadow-color);
 }
 
 .grid-card__element-tile > img {
